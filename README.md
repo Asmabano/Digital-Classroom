@@ -1,0 +1,2 @@
+# Digital-Classroom
+This project is a digital classroom system that will make available extensive content segregated on the basis of subjects along with ease of the assignments submission. One can solve assignments, anywhere and get them evaluated instantly. This system makes the evaluation of the assignments transparent and accurate. And makes available all the tutorials of different subjects to users across the globe.
