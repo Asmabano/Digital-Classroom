@@ -957,7 +957,7 @@
 		input[type="button"]:active,
 		button:active,
 		.button:active {
-			background-color: #5ec0b6;
+			background-color: #82cec6;
 		}
 
 		input[type="submit"].icon,
@@ -1023,7 +1023,7 @@
 		input[type="button"].style2,
 		button.style2,
 		.button.style2 {
-			background-color: #7f92cf;
+			background-color: #82cec6;
 		}
 
 			input[type="submit"].style2:hover,
@@ -1031,7 +1031,7 @@
 			input[type="button"].style2:hover,
 			button.style2:hover,
 			.button.style2:hover {
-				background-color: #92a2d6;
+				background-color: #82cec6;
 			}
 
 			input[type="submit"].style2:active,
@@ -1039,7 +1039,7 @@
 			input[type="button"].style2:active,
 			button.style2:active,
 			.button.style2:active {
-				background-color: #6c82c8;
+				background-color: #82cec6;
 			}
 
 		input[type="submit"].style3,
@@ -1047,7 +1047,7 @@
 		input[type="button"].style3,
 		button.style3,
 		.button.style3 {
-			background-color: #9d7ed0;
+			background-color: #82cec6;
 		}
 
 			input[type="submit"].style3:hover,
@@ -1055,7 +1055,7 @@
 			input[type="button"].style3:hover,
 			button.style3:hover,
 			.button.style3:hover {
-				background-color: #ab91d7;
+				background-color: #82cec6;
 			}
 
 			input[type="submit"].style3:active,
@@ -1063,7 +1063,7 @@
 			input[type="button"].style3:active,
 			button.style3:active,
 			.button.style3:active {
-				background-color: #8f6bc9;
+				background-color: #82cec6;
 			}
 
 		@media screen and (max-width: 480px) {
