@@ -572,7 +572,11 @@
 			border-radius: 0;
 			padding: 0;
 		}
+        .a1{
+            margin-left: 0px;
+            margin-top: 0px;
 
+        }
 /* Icon */
 
 	.icon {
