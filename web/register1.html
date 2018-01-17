@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Signup / Registration form </title>
+    <!-- CORE CSS-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+
+    <style type="text/css">
+        html,
+        body {
+            height: 100%;
+        }
+        html {
+            display: table;
+            margin: auto;
+        }
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+        .margin {
+            margin: 0 !important;
+        }
+        /* The container */
+        .container {
+            display: inline;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            font-size: 20px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        /* Hide the browser's default radio button */
+        .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        /* Create a custom radio button */
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            background-color: #eee;
+            border-radius: 50%;
+        }
+
+        /* On mouse-over, add a grey background color */
+        .container:hover input ~ .checkmark {
+            background-color: #ccc;
+        }
+
+        /* When the radio button is checked, add a blue background */
+        .container input:checked ~ .checkmark {
+            background-color: #2196F3;
+        }
+
+        /* Create the indicator (the dot/circle - hidden when not checked) */
+        .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+        }
+
+        /* Show the indicator (dot/circle) when checked */
+        .container input:checked ~ .checkmark:after {
+            display: block;
+        }
+
+        /* Style the indicator (dot/circle) */
+        .container .checkmark:after {
+            top: 8px;
+            left: 8px;
+            width: 8px;
+            height: 6px;
+            border-radius: 50%;
+            background: white;
+        }
+    </style>
+
+    <script language="JavaScript">
+        <!--
+        function MM_goToURL() { //v3.0
+            var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+            for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+        }
+        //-->
+    </script>
+
+</head>
+
+<body class="blue">
+
+
+<div id="login-page" class="row">
+    <div class="col s12 z-depth-6 card-panel">
+        <form class="login-form">
+            <div class="row">
+                <div class="input-field col s12 center">
+                    <!-- <img src="http://w3lessons.info/logo.png" alt="" class="responsive-img valign profile-image-login"> -->
+                    <p class="center login-form-text">Digital Classroom SignUp Form</p>
+                </div>
+            </div>
+            <label class="container">Student
+                <input type="radio" name="testing" value="first" onClick="MM_goToURL('parent','/Digital-Classroom-master/Digital-Classroom/web/register.html');return document.MM_returnValue">
+                <span class="checkmark"></span>
+            </label>
+
+            <a href="register1.html"><label class="container">Teacher
+                <input type="radio" name="testing">
+                <span class="checkmark"></span></label></a>
+            </label>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="mdi-social-person-outline prefix"></i>
+                    <input id="username" type="text" class="validate">
+                    <label for="username" class="center-align">Username</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="mdi-communication-email prefix"></i>
+                    <input id="email" type="email" class="validate">
+                    <label for="email" class="center-align">Email</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="mdi-action-lock-outline prefix"></i>
+                    <input id="password" type="password" class="validate">
+                    <label for="password">Password</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="mdi-action-lock-outline prefix"></i>
+                    <input id="password-again" type="password">
+                    <label for="password-again">Re-type password</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="mdi-social-domain prefix" ></i>
+                    <input id="department" type="text">
+                    <label for="department">Department</label>
+                </div>
+            </div>
+            <div class="row margin">
+                <div class="input-field col s12">
+                    <i class="mdi-image-portrait prefix"></i>
+                    <input id="id" type="text">
+                    <label for="id">ID</label>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <a href="register.html" class="btn waves-effect waves-light col s12">Register Now</a>
+                </div>
+                <div class="input-field col s12">
+                    <p class="margin center medium-small sign-up">Already have an account? <a href="login.html">Login</a></p>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<!-- ================================================
+  Scripts
+  ================================================ -->
+
+<!-- jQuery Library -->
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<!--materialize js-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+
+
+
+</body>
+
+</html>
