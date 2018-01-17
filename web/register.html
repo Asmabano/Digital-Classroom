@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Signup / Registration form using Material Design - Demo by W3lessons</title>
+  <title>Signup / Registration form </title>
   <!-- CORE CSS-->
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
@@ -25,7 +25,80 @@ body {
 .margin {
   margin: 0 !important;
 }
+     /* The container */
+ .container {
+     display: inline;
+     position: relative;
+     padding-left: 35px;
+     margin-bottom: 12px;
+     cursor: pointer;
+     font-size: 20px;
+     -webkit-user-select: none;
+     -moz-user-select: none;
+     -ms-user-select: none;
+     user-select: none;
+ }
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 8px;
+    left: 8px;
+    width: 8px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
 </style>
+    <script language="JavaScript">
+        <!--
+        function MM_goToURL() { //v3.0
+            var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+            for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+        }
+        //-->
+    </script>
+
+
 
 </head>
 
@@ -38,9 +111,18 @@ body {
         <div class="row">
           <div class="input-field col s12 center">
             <!-- <img src="http://w3lessons.info/logo.png" alt="" class="responsive-img valign profile-image-login"> -->
-            <p class="center login-form-text">W3lessons - Material Design SignUp Form</p>
+            <p class="center login-form-text">Digital Classroom SignUp Form</p>
           </div>
         </div>
+          <label class="container">Student
+              <input type="radio" name="testing">
+              <span class="checkmark"></span>
+          </label>
+
+          <label class="container">Teacher
+              <input type="radio" name="testing" value="first" onClick="MM_goToURL('parent','/Digital-Classroom-master/Digital-Classroom/web/register1.html');return document.MM_returnValue">
+              <span class="checkmark"></span></label>
+          </label>
         <div class="row margin">
           <div class="input-field col s12">
             <i class="mdi-social-person-outline prefix"></i>
@@ -69,6 +151,34 @@ body {
             <label for="password-again">Re-type password</label>
           </div>
         </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+              <i class="mdi-social-group prefix"></i>
+            <input id="batch" type="text">
+            <label for="batch">Batch</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+              <i class="mdi-editor-insert-invitation prefix" ></i>
+            <input id="year" type="text">
+            <label for="year">Year</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+              <i class="mdi-social-domain prefix" ></i>
+            <input id="department" type="text">
+            <label for="department">Department</label>
+          </div>
+        </div>
+        <div class="row margin">
+          <div class="input-field col s12">
+              <i class="mdi-image-portrait prefix"></i>
+            <input id="id" type="text">
+            <label for="id">ID</label>
+          </div>
+        </div>
         <div class="row">
           <div class="input-field col s12">
             <a href="register.html" class="btn waves-effect waves-light col s12">Register Now</a>
@@ -82,18 +192,6 @@ body {
   </div>
 
 
-  <center>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Post Page - Responsive -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-5104998679826243"
-     data-ad-slot="3470684978"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</center>
-
   <!-- ================================================
     Scripts
     ================================================ -->
@@ -104,17 +202,6 @@ body {
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
 
 
-
-  <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-27820211-3', 'auto');
-  ga('send', 'pageview');
-
-</script><script src="//load.sumome.com/" data-sumo-site-id="1cf2c3d548b156a57050bff06ee37284c67d0884b086bebd8e957ca1c34e99a1" async="async"></script>
 
 
 </body>
