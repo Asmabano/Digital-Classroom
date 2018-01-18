@@ -37,35 +37,46 @@ body {
       <form class="login-form">
         <div class="row">
           <div class="input-field col s12 center">
-            <!-- <img src="http://w3lessons.info/logo.png" alt="" class="responsive-img valign profile-image-login"> -->
             <p class="center login-form-text">Digital Classroom Login Form</p>
           </div>
         </div>
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-social-person-outline prefix"></i>
-            <input class="validate" id="email" type="email">
-            <label for="email" data-error="wrong" data-success="right" class="center-align">Email</label>
-          </div>
-        </div>
-        <div class="row margin">
-          <div class="input-field col s12">
-            <i class="mdi-action-lock-outline prefix"></i>
-            <input id="password" type="password">
-            <label for="password">Password</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12 m12 l12  login-text">
-              <input type="checkbox" id="remember-me" />
-              <label for="remember-me">Remember me</label>
-          </div>
-        </div>
-        <div class="row">
-          <div class="input-field col s12">
-            <a href="login.html" class="btn waves-effect waves-light col s12">Login</a>
-          </div>
-        </div>
+
+        <form action="a.php" method="post" target="_blank">
+          First name: <input type="text" name="fname"><br>
+          Last name: <input type="text" name="lname"><br>
+          <input type="submit" value="Submit">
+        </form>
+
+        <!---->
+        <!--<form method="get" id="log" action="../src/login/a.php" target="_blank">-->
+            <!--<div class="row margin">-->
+              <!--<div class="input-field col s12">-->
+                <!--<i class="mdi-social-person-outline prefix"></i>-->
+                <!--<input class="validate" id="email" type="email">-->
+                <!--<label for="email" data-error="wrong" data-success="right" class="center-align">Email</label>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row margin">-->
+              <!--<div class="input-field col s12">-->
+                <!--<i class="mdi-action-lock-outline prefix"></i>-->
+                <!--<input id="password" type="password">-->
+                <!--<label for="password">Password</label>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+              <!--<div class="input-field col s12 m12 l12  login-text">-->
+                  <!--<input type="checkbox" id="remember-me" />-->
+                  <!--<label for="remember-me">Remember me</label>-->
+              <!--</div>-->
+            <!--</div>-->
+            <!--<div class="row">-->
+              <!--<div class="input-field col s12">-->
+                <!--&lt;!&ndash;<a href="login.html" class="btn waves-effect waves-light col s12">Login</a>&ndash;&gt;-->
+                  <!--<button  type="submit">Login</button>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</form>-->
+
         <div class="row">
           <div class="input-field col s6 m6 l6">
             <p class="margin medium-small"><a href="register.html">Register Now!</a></p>
@@ -80,20 +91,6 @@ body {
   </div>
 
 
-  <center>
-    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<!-- Post Page - Responsive -->
-<ins class="adsbygoogle"
-     style="display:inline-block;width:300px;height:250px"
-     data-ad-client="ca-pub-5104998679826243"
-     data-ad-slot="3470684978"></ins>
-<script>
-(adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-</center>
-
-
-
   <!-- ================================================
     Scripts
     ================================================ -->
@@ -102,7 +99,14 @@ body {
  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <!--materialize js-->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
-
+  <script language="JavaScript">
+      <!--
+      function MM_goToURL() { //v3.0
+          var i, args=MM_goToURL.arguments; document.MM_returnValue = false;
+          for (i=0; i<(args.length-1); i+=2) eval(args[i]+".location='"+args[i+1]+"'");
+      }
+      //-->
+  </script>
 
 </body>
 
