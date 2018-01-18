@@ -4,3 +4,4 @@ $dbPort = "5432";
 $dbName = "postgres";
 $dbUser = "postgres";
 $dbPass = "postgres";
+$salt = "!@#$%";
